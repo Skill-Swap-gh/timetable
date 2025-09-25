@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.days-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.day-column {
+    flex: 1;
+    min-width: 180px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.day-header {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.monday .day-header { 
+    background-color: #f21e07; 
+}
+
+.tuesday .day-header { 
+    background-color: #f21e07; 
+}
+
+.wednesday .day-header { 
+    background-color: #f21e07; 
+}
+
+.thursday .day-header { 
+    background-color: #f21e07; 
+}
+
+.friday .day-header { 
+    background-color: #f21e07; 
+}
+
+.lessons-list {
+    padding: 10px;
+}
+
+.lesson-card {
+    background-color: #f8f9fa;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #f21e07;
+}
+
+.lesson-number {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.lesson-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.lesson-teacher {
+    color: #666;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .day-column {
+        min-width: 100%;
+    }
+}
